@@ -1,0 +1,58 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.header{
+   background-color: rgb(252, 243, 229);  
+   padding:30px 30px 30px 150px ;   
+}
+
+ /* -------this is nav related section ------ */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 200px;
+}
+.nav-title{
+    color: black;
+    font-size:45px;
+    font-weight: 800px;
+}
+.text-primary{
+    color: rgb(250, 184, 3);
+}
+.btn-primary{
+    background: rgb(250, 184, 3);
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border: 0px;
+    padding: 15px 35px;
+}
+nav>ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    margin: 50px;
+    
+}
+nav a{
+    text-decoration: none;
+}
+.banner{
+    background-image: url('images/header_bg.png'), url('images/developer.png');
+    background-repeat: no-repeat;
+   /* background-position: bottom right, top left; */
+   padding: 30px 30px 30px 150px;
+   align-items: center;
+   display: flex;
+}
+.profile-pic{
+    width: 500px;
+}
