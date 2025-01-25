@@ -172,7 +172,7 @@ main section{
 }
 
 /*--------- this is footer section ----------*/
-footer{
+ footer{
     display: flex;
     gap: 100px;
     background: rgb(252, 243, 229) ;
@@ -193,4 +193,75 @@ margin-right: 25px;
     background: #ffffff;
     border: 0;
     width: 100%;
+}
+
+/* ------------this is media queary section -----------*/
+
+/* ------Small device ------- */
+
+@media screen and (max-width:576px){
+    .header{
+        background-image: none;
+    }
+    
+      nav, 
+      nav > ul, 
+      .banner, 
+      .about-info-container, 
+      .skills-container, 
+      .resume-container, 
+      footer{
+        flex-direction: column;
+    }
+    /* nav > ul{
+        gap:10px;
+    } */
+     .banner .profile-pic{
+        width: 100%;
+     }
+     .btn-primary{
+        margin-bottom: 15px;
+     }
+    
+    .about,  #what-i-do-description, .resume-container, footer{
+        padding: 20px;
+    } 
+    .footer-column{
+        width: 100%;
+    }
+    .contact input[type="text"], .contact input[type="email"], textarea{
+        width: 80%;
+    }
+}
+
+
+/* --------Medium Device  ----------*/
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .btn-primary{
+        margin-bottom: 15px;
+    }
+    nav li{
+        margin: 20px;
+        margin-left: 30px;  
+    }
+    .profile-pic{
+        margin-left: 20px;   
+    }
+
+    .resume-container, footer{
+        padding: 30px;
+    }
+    .contact input[type="text"], .contact input[type="email"], textarea{
+        width: 80%;
+    }
+    
+    .skills-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-info-container{
+        gap: 15px;
+    }
+
 }
