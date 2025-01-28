@@ -203,7 +203,15 @@ margin-right: 25px;
     .header{
         background-image: none;
     }
-    
+    nav{
+        margin: 0px 50px  ;
+    }
+    nav li{
+        margin: 20px;
+    }
+     .nav-title{
+        margin: 0px;
+    } 
       nav, 
       nav > ul, 
       .banner, 
@@ -237,13 +245,18 @@ margin-right: 25px;
 
 /* --------Medium Device  ----------*/
 
-@media screen and (min-width:576px) and (max-width:992px){
-    .btn-primary{
-        margin-bottom: 15px;
+ @media screen and (min-width:576px) and (max-width:992px){
+    .banner{
+        flex-direction: column;
     }
+    nav{
+        margin: 0px 100px 0px 120px ;
+    }
+   
     nav li{
         margin: 20px;
         margin-left: 30px;  
+        /* align-items: center; */
     }
     .profile-pic{
         margin-left: 20px;   
@@ -264,4 +277,4 @@ margin-right: 25px;
         gap: 15px;
     }
 
-}
+} 
